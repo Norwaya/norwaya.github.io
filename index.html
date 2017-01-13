@@ -186,16 +186,14 @@
     <div class="post-content">
       
         
+          
+        
 
         
-          <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><p>-1 如果是用同一个秘钥部署配置如下<br>    deploy:<br>      type: git<br>      repo:<br>        coding: git@git.coding.net:norwaya/norwaya.git,master<br>        github: git@github.com:norwaya/norwaya.github.io.git,master<br>      branch: master<br>-2 每个代码托管网站有都自己的秘钥的时候 配置<br>    deploy:<br>      type: git<br>      repo:<br>        coding: git@git.coding.net:norwaya/norwaya.git,master<br>        github: git@github.com:norwaya/norwaya.github.io.git,master<br>      branch: master</p>
-<ul>
-<li><p>然后要在.ssh 下增加config文件</p>
-<h1 id="github-key"><a href="#github-key" class="headerlink" title="github key"></a>github key</h1><p>Host github.com<br>   Port 22<br>   HostName github.com<br>   PreferredAuthentications publickey<br>   IdentityFile ~/.ssh/github.id_rsa</p>
-<h1 id="coding-key"><a href="#coding-key" class="headerlink" title="coding key"></a>coding key</h1><p>Host git.coding.net<br>   Port 443<br>   HostName git-ssh.coding.net<br>   PreferredAuthentications publickey<br>   IdentityFile ~/.ssh/coding.id_rsa</p>
-</li>
-</ul>
-
+          <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><p>-1 如果是用同一个秘钥部署配置如下<br>
+          <div class="read-more">
+            <a href="/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/" class="read-more-link">阅读更多</a>
+          </div>
         
       
     </div>
