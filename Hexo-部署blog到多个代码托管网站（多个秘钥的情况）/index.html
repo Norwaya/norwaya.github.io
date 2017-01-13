@@ -11,10 +11,12 @@
 
 
 
-  <meta name="description" content="Contact me at yinpan_yp@163.com"/>
+  <meta name="description" content="hexo 部署 blog 到github，coding"/>
 
 
 
+
+  <meta name="keywords" content="github,coding,hexo,部署," />
 
 
 
@@ -32,18 +34,39 @@
 
 
 <meta name="description" content="hexo 部署 blog 到github，coding
-如果是用同一个秘钥部署配置如下">
+如果是用同一个秘钥部署配置如下
+
+deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:norwaya/norwaya.git,master
+    github: git@github.com:norwaya/norwaya.github.io.git,master
+  br">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Norwaya">
+<meta property="og:title" content="hexo 部署 blog 到github，coding">
 <meta property="og:url" content="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/index.html">
 <meta property="og:site_name" content="Norwaya">
 <meta property="og:description" content="hexo 部署 blog 到github，coding
-如果是用同一个秘钥部署配置如下">
-<meta property="og:updated_time" content="2017-01-13T10:07:31.580Z">
+如果是用同一个秘钥部署配置如下
+
+deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:norwaya/norwaya.git,master
+    github: git@github.com:norwaya/norwaya.github.io.git,master
+  br">
+<meta property="og:updated_time" content="2017-01-13T10:11:25.688Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Norwaya">
+<meta name="twitter:title" content="hexo 部署 blog 到github，coding">
 <meta name="twitter:description" content="hexo 部署 blog 到github，coding
-如果是用同一个秘钥部署配置如下">
+如果是用同一个秘钥部署配置如下
+
+deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:norwaya/norwaya.git,master
+    github: git@github.com:norwaya/norwaya.github.io.git,master
+  br">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
@@ -59,7 +82,7 @@
 
 
 
-    <title>  · Norwaya </title>
+    <title> hexo 部署 blog 到github，coding · Norwaya </title>
   </head>
 
   <body>
@@ -172,7 +195,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          
+          hexo 部署 blog 到github，coding
         
       </h1>
 
@@ -197,7 +220,6 @@
         <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><ul>
 <li>如果是用同一个秘钥部署配置如下</li>
 </ul>
-<a id="more"></a>
 <pre><code>deploy:
   type: git
   repo: 
@@ -207,6 +229,7 @@
 </code></pre><ul>
 <li>每个代码托管网站有都自己的秘钥的时候 配置</li>
 </ul>
+<a id="more"></a>    
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">	type: git</div><div class="line">	repo: </div><div class="line">		coding: git@git.coding.net:norwaya/norwaya.git,master</div><div class="line">		github: git@github.com:norwaya/norwaya.github.io.git,master</div><div class="line">	branch: master</div></pre></td></tr></table></figure>
 <pre><code>然后要在.ssh 下增加config文件
 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># github key</div><div class="line">Host github.com</div><div class="line">    Port 22   </div><div class="line">    HostName github.com    </div><div class="line">    PreferredAuthentications publickey    </div><div class="line">    IdentityFile ~/.ssh/github.id_rsa</div><div class="line"># coding key</div><div class="line">Host git.coding.net    </div><div class="line">	Port 443   </div><div class="line">	HostName git-ssh.coding.net    </div><div class="line">	PreferredAuthentications publickey    </div><div class="line">	IdentityFile ~/.ssh/coding.id_rsa</div></pre></td></tr></table></figure>
@@ -214,6 +237,27 @@
       
     </div>
 
+    
+      <footer class="post-footer">
+        <div class="post-tags">
+          
+            <a href="/tags/github-coding-hexo-部署/">github,coding,hexo,部署</a>
+          
+        </div>
+
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/android 视差因子/">
+        <span class="next-text nav-default">android 视差因子</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
     
   </article>
 
@@ -223,7 +267,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/"
-           data-title="" data-url="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/">
+           data-title="hexo 部署 blog 到github，coding" data-url="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/">
       </div>
     
   </div>
