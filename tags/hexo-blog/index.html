@@ -28,13 +28,13 @@
 
 
 
-<link rel="canonical" href="https://norwaya.github.io/"/>
+<link rel="canonical" href="https://norwaya.github.io/tags/hexo-blog/"/>
 
 
 <meta name="description" content="Contact me at yinpan_yp@163.com">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Norwaya">
-<meta property="og:url" content="https://norwaya.github.io/index.html">
+<meta property="og:url" content="https://norwaya.github.io/tags/hexo-blog/index.html">
 <meta property="og:site_name" content="Norwaya">
 <meta property="og:description" content="Contact me at yinpan_yp@163.com">
 <meta name="twitter:card" content="summary">
@@ -55,7 +55,11 @@
 
 
 
-    <title> Norwaya </title>
+    <title>
+  
+    hexo,blog · Norwaya
+  
+</title>
   </head>
 
   <body>
@@ -163,162 +167,31 @@
         <div class="content-wrapper">
           <div id="content" class="content">
             
-  <section id="posts" class="posts">
+  
+  <section id="archive" class="archive">
     
       
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/">Hexo 部署blog到多个代码托管网站（多个秘钥的情况）</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年1月13日
-        </span>
-      </div>
-    </header>
-
-    
-
-    <div class="post-content">
+        <div class="archive-title tag">
+          <h2 class="archive-name">hexo,blog</h2>
+        </div>
       
-        
-
-        
-          <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><p>-1 如果是用同一个秘钥部署配置如下<br>    deploy:<br>      type: git<br>      repo:<br>        coding: git@git.coding.net:norwaya/norwaya.git,master<br>        github: git@github.com:norwaya/norwaya.github.io.git,master<br>      branch: master<br>-2 每个代码托管网站有都自己的秘钥的时候 配置<br>    deploy:<br>      type: git<br>      repo:<br>        coding: git@git.coding.net:norwaya/norwaya.git,master<br>        github: git@github.com:norwaya/norwaya.github.io.git,master<br>      branch: master</p>
-<ul>
-<li><p>然后要在.ssh 下增加config文件</p>
-<h1 id="github-key"><a href="#github-key" class="headerlink" title="github key"></a>github key</h1><p>Host github.com<br>   Port 22<br>   HostName github.com<br>   PreferredAuthentications publickey<br>   IdentityFile ~/.ssh/github.id_rsa</p>
-<h1 id="coding-key"><a href="#coding-key" class="headerlink" title="coding key"></a>coding key</h1><p>Host git.coding.net<br>   Port 443<br>   HostName git-ssh.coding.net<br>   PreferredAuthentications publickey<br>   IdentityFile ~/.ssh/coding.id_rsa</p>
-</li>
-</ul>
-
-        
-      
-    </div>
-
     
-  </article>
 
     
       
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/rxbus/">rxjava 实现的 rxbus</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年1月13日
-        </span>
-      </div>
-    </header>
-
-    
-
-    <div class="post-content">
       
-        
+      <div class="archive-post">
+        <span class="archive-post-time">
           
-        
-
-        
-          <h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
-compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
-</code></pre><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2>
-          <div class="read-more">
-            <a href="/rxbus/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/我的第一篇hexo文章/">我的第一篇hexo文章</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年1月13日
+            2017-01-13
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/" class="archive-post-link">
+            Hexo 部署blog到多个代码托管网站（多个秘钥的情况）
+          </a>
         </span>
       </div>
-    </header>
-
-    
-
-    <div class="post-content">
-      
-        
-          
-        
-
-        
-          <h1 id="你好-hexo"><a href="#你好-hexo" class="headerlink" title="你好 hexo"></a>你好 hexo</h1><pre><code>这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。
-存档
-</code></pre><h1 id="blog-settings"><a href="#blog-settings" class="headerlink" title="blog settings"></a>blog settings</h1><p><a href="https://github.com/litten/hexo-theme-yilia">hexo blog 主题配置教程</a><br>
-          <div class="read-more">
-            <a href="/我的第一篇hexo文章/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/Hello Hexo/">Hello Hexo Blog</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年1月12日
-        </span>
-      </div>
-    </header>
-
-    
-
-    <div class="post-content">
-      
-        
-          
-        
-
-        
-          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
-          <div class="read-more">
-            <a href="/Hello Hexo/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-  </article>
-
     
   </section>
 
@@ -327,6 +200,7 @@ compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
     
     
   </nav>
+
 
 
           </div>
