@@ -28,8 +28,55 @@
     <entry>
       <title><![CDATA[android 视差因子]]></title>
       <url>https://norwaya.github.io/android%20%E8%A7%86%E5%B7%AE%E5%9B%A0%E5%AD%90/</url>
-      <content type="html"><![CDATA[<p>Demo:<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</div><div class="line">&lt;android.support.design.widget.CoordinatorLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</div><div class="line">    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;</div><div class="line">    android:layout_width=&quot;match_parent&quot;</div><div class="line">    android:layout_height=&quot;match_parent&quot;&gt;</div><div class="line"></div><div class="line">    &lt;android.support.design.widget.AppBarLayout</div><div class="line">        android:id=&quot;@+id/appbar&quot;</div><div class="line">        android:layout_width=&quot;match_parent&quot;</div><div class="line">        android:layout_height=&quot;160dp&quot;&gt;</div><div class="line"></div><div class="line">        &lt;android.support.design.widget.CollapsingToolbarLayout</div><div class="line">            android:id=&quot;@+id/collapsing_toolbar&quot;</div><div class="line">            android:layout_width=&quot;match_parent&quot;</div><div class="line">            android:layout_height=&quot;match_parent&quot;</div><div class="line">            app:expandedTitleMarginEnd=&quot;64dp&quot;</div><div class="line">            app:contentScrim=&quot;?attr/colorPrimary&quot;</div><div class="line">            app:expandedTitleMarginStart=&quot;48dp&quot;</div><div class="line">            app:statusBarScrim=&quot;?attr/colorPrimary&quot;</div><div class="line">            app:layout_scrollFlags=&quot;scroll|exitUntilCollapsed&quot;&gt;</div><div class="line"></div><div class="line">            &lt;ImageView</div><div class="line">                android:id=&quot;@+id/image&quot;</div><div class="line">                app:layout_collapseParallaxMultiplier=&quot;0.6&quot;</div><div class="line">                android:layout_width=&quot;match_parent&quot;</div><div class="line">                android:layout_height=&quot;match_parent&quot;</div><div class="line">                android:scaleType=&quot;fitXY&quot;</div><div class="line">                android:src=&quot;@drawable/image&quot;</div><div class="line">                app:layout_collapseMode=&quot;parallax&quot; /&gt;</div><div class="line"></div><div class="line">            &lt;android.support.v7.widget.Toolbar</div><div class="line">                android:id=&quot;@+id/toolbar&quot;</div><div class="line">                android:layout_width=&quot;match_parent&quot;</div><div class="line">                android:layout_height=&quot;?attr/actionBarSize&quot;</div><div class="line">                app:layout_collapseMode=&quot;pin&quot;</div><div class="line">                app:popupTheme=&quot;@style/ThemeOverlay.AppCompat.Light&quot;&gt;&lt;/android.support.v7.widget.Toolbar&gt;</div><div class="line">        &lt;/android.support.design.widget.CollapsingToolbarLayout&gt;</div><div class="line"></div><div class="line"></div><div class="line">    &lt;/android.support.design.widget.AppBarLayout&gt;</div><div class="line"></div><div class="line">    &lt;android.support.v4.widget.NestedScrollView</div><div class="line">        android:layout_width=&quot;match_parent&quot;</div><div class="line">        android:layout_height=&quot;wrap_content&quot;</div><div class="line">        app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;&gt;</div><div class="line"></div><div class="line">    &lt;/android.support.v4.widget.NestedScrollView&gt;</div><div class="line"></div><div class="line">    &lt;android.support.design.widget.FloatingActionButton</div><div class="line">        android:layout_width=&quot;wrap_content&quot;</div><div class="line">        android:layout_height=&quot;wrap_content&quot;</div><div class="line">        android:src=&quot;@android:drawable/ic_input_add&quot;</div><div class="line">        app:backgroundTintMode=&quot;multiply&quot;</div><div class="line">        app:layout_anchor=&quot;@id/appbar&quot;</div><div class="line">        app:layout_anchorGravity=&quot;bottom|end|right&quot;&gt;&lt;/android.support.design.widget.FloatingActionButton&gt;</div><div class="line"></div><div class="line">&lt;/android.support.design.widget.CoordinatorLayout&gt;</div></pre></td></tr></table></figure></p>
-<p>imageView 注释：<br>layout_collapseMode (折叠模式) - 有两个值:<br>pin -  设置为这个模式时，当CollapsingToolbarLayout完全收缩后，Toolbar还可以保留在屏幕上。<br>parallax - 设置为这个模式时，在内容滚动时，CollapsingToolbarLayout中的View（比如ImageView)也可以同时滚动，实现视差滚动效果，通常和layout_collapseParallaxMultiplier(设置视差因子)搭配使用。<br>layout_collapseParallaxMultiplier(视差因子) - 设置视差滚动因子，值为：0~1。  具体效果自行测试</p>
+      <content type="html"><![CDATA[<p>Demo:<br><a id="more"></a></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;android.support.design.widget.CoordinatorLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;&gt;
+    &lt;android.support.design.widget.AppBarLayout
+        android:id=&quot;@+id/appbar&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;160dp&quot;&gt;
+        &lt;android.support.design.widget.CollapsingToolbarLayout
+            android:id=&quot;@+id/collapsing_toolbar&quot;
+            android:layout_width=&quot;match_parent&quot;
+            android:layout_height=&quot;match_parent&quot;
+            app:expandedTitleMarginEnd=&quot;64dp&quot;
+            app:contentScrim=&quot;?attr/colorPrimary&quot;
+            app:expandedTitleMarginStart=&quot;48dp&quot;
+            app:statusBarScrim=&quot;?attr/colorPrimary&quot;
+            app:layout_scrollFlags=&quot;scroll|exitUntilCollapsed&quot;&gt;
+            &lt;ImageView
+                android:id=&quot;@+id/image&quot;
+                app:layout_collapseParallaxMultiplier=&quot;0.6&quot;
+                android:layout_width=&quot;match_parent&quot;
+                android:layout_height=&quot;match_parent&quot;
+                android:scaleType=&quot;fitXY&quot;
+                android:src=&quot;@drawable/image&quot;
+                app:layout_collapseMode=&quot;parallax&quot; /&gt;
+            &lt;android.support.v7.widget.Toolbar
+                android:id=&quot;@+id/toolbar&quot;
+                android:layout_width=&quot;match_parent&quot;
+                android:layout_height=&quot;?attr/actionBarSize&quot;
+                app:layout_collapseMode=&quot;pin&quot;
+                app:popupTheme=&quot;@style/ThemeOverlay.AppCompat.Light&quot;&gt;&lt;/android.support.v7.widget.Toolbar&gt;
+        &lt;/android.support.design.widget.CollapsingToolbarLayout&gt;
+    &lt;/android.support.design.widget.AppBarLayout&gt;
+    &lt;android.support.v4.widget.NestedScrollView
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;&gt;
+    &lt;/android.support.v4.widget.NestedScrollView&gt;
+    &lt;android.support.design.widget.FloatingActionButton
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:src=&quot;@android:drawable/ic_input_add&quot;
+        app:backgroundTintMode=&quot;multiply&quot;
+        app:layout_anchor=&quot;@id/appbar&quot;
+        app:layout_anchorGravity=&quot;bottom|end|right&quot;&gt;&lt;/android.support.design.widget.FloatingActionButton&gt;
+&lt;/android.support.design.widget.CoordinatorLayout&gt;
+</code></pre><p>imageView 注释：<br>layout_collapseMode (折叠模式) - 有两个值:<br>pin -  设置为这个模式时，当CollapsingToolbarLayout完全收缩后，Toolbar还可以保留在屏幕上。<br>parallax - 设置为这个模式时，在内容滚动时，CollapsingToolbarLayout中的View（比如ImageView)也可以同时滚动，实现视差滚动效果，通常和layout_collapseParallaxMultiplier(设置视差因子)搭配使用。<br>layout_collapseParallaxMultiplier(视差因子) - 设置视差滚动因子，值为：0~1。  具体效果自行测试</p>
 ]]></content>
     </entry>
     
