@@ -11,12 +11,10 @@
 
 
 
-  <meta name="description" content="Hexo 部署blog到多个代码托管网站（多个秘钥的情况）"/>
+  <meta name="description" content="Contact me at yinpan_yp@163.com"/>
 
 
 
-
-  <meta name="keywords" content="hexo,blog," />
 
 
 
@@ -33,16 +31,19 @@
 <link rel="canonical" href="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/"/>
 
 
-<meta name="description" content="hexo 部署 blog 到github，coding-1 如果是用同一个秘钥部署配置如下">
+<meta name="description" content="hexo 部署 blog 到github，coding
+如果是用同一个秘钥部署配置如下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 部署blog到多个代码托管网站（多个秘钥的情况）">
+<meta property="og:title" content="Norwaya">
 <meta property="og:url" content="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/index.html">
 <meta property="og:site_name" content="Norwaya">
-<meta property="og:description" content="hexo 部署 blog 到github，coding-1 如果是用同一个秘钥部署配置如下">
-<meta property="og:updated_time" content="2017-01-13T09:34:16.346Z">
+<meta property="og:description" content="hexo 部署 blog 到github，coding
+如果是用同一个秘钥部署配置如下">
+<meta property="og:updated_time" content="2017-01-13T10:07:31.580Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 部署blog到多个代码托管网站（多个秘钥的情况）">
-<meta name="twitter:description" content="hexo 部署 blog 到github，coding-1 如果是用同一个秘钥部署配置如下">
+<meta name="twitter:title" content="Norwaya">
+<meta name="twitter:description" content="hexo 部署 blog 到github，coding
+如果是用同一个秘钥部署配置如下">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
@@ -58,7 +59,7 @@
 
 
 
-    <title> Hexo 部署blog到多个代码托管网站（多个秘钥的情况） · Norwaya </title>
+    <title>  · Norwaya </title>
   </head>
 
   <body>
@@ -171,7 +172,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          Hexo 部署blog到多个代码托管网站（多个秘钥的情况）
+          
         
       </h1>
 
@@ -186,45 +187,33 @@
       <div class="post-toc" id="post-toc">
         <h2 class="post-toc-title">文章目录</h2>
         <div class="post-toc-content">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-部署-blog-到github，coding"><span class="toc-text">hexo 部署 blog 到github，coding</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#github-key"><span class="toc-text">github key</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#coding-key"><span class="toc-text">coding key</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-部署-blog-到github，coding"><span class="toc-text">hexo 部署 blog 到github，coding</span></a></li></ol>
         </div>
       </div>
     
 
     <div class="post-content">
       
-        <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><p>-1 如果是用同一个秘钥部署配置如下<br><a id="more"></a><br>    deploy:<br>      type: git<br>      repo:<br>        coding: git@git.coding.net:norwaya/norwaya.git,master<br>        github: git@github.com:norwaya/norwaya.github.io.git,master<br>      branch: master<br>-2 每个代码托管网站有都自己的秘钥的时候 配置<br>    deploy:<br>      type: git<br>      repo:<br>        coding: git@git.coding.net:norwaya/norwaya.git,master<br>        github: git@github.com:norwaya/norwaya.github.io.git,master<br>      branch: master</p>
-<ul>
-<li><p>然后要在.ssh 下增加config文件</p>
-<h1 id="github-key"><a href="#github-key" class="headerlink" title="github key"></a>github key</h1><p>Host github.com<br>   Port 22<br>   HostName github.com<br>   PreferredAuthentications publickey<br>   IdentityFile ~/.ssh/github.id_rsa</p>
-<h1 id="coding-key"><a href="#coding-key" class="headerlink" title="coding key"></a>coding key</h1><p>Host git.coding.net<br>   Port 443<br>   HostName git-ssh.coding.net<br>   PreferredAuthentications publickey<br>   IdentityFile ~/.ssh/coding.id_rsa</p>
-</li>
+        <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><ul>
+<li>如果是用同一个秘钥部署配置如下</li>
 </ul>
+<a id="more"></a>
+<pre><code>deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:norwaya/norwaya.git,master
+    github: git@github.com:norwaya/norwaya.github.io.git,master
+  branch: master
+</code></pre><ul>
+<li>每个代码托管网站有都自己的秘钥的时候 配置</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">	type: git</div><div class="line">	repo: </div><div class="line">		coding: git@git.coding.net:norwaya/norwaya.git,master</div><div class="line">		github: git@github.com:norwaya/norwaya.github.io.git,master</div><div class="line">	branch: master</div></pre></td></tr></table></figure>
+<pre><code>然后要在.ssh 下增加config文件
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># github key</div><div class="line">Host github.com</div><div class="line">    Port 22   </div><div class="line">    HostName github.com    </div><div class="line">    PreferredAuthentications publickey    </div><div class="line">    IdentityFile ~/.ssh/github.id_rsa</div><div class="line"># coding key</div><div class="line">Host git.coding.net    </div><div class="line">	Port 443   </div><div class="line">	HostName git-ssh.coding.net    </div><div class="line">	PreferredAuthentications publickey    </div><div class="line">	IdentityFile ~/.ssh/coding.id_rsa</div></pre></td></tr></table></figure>
 
       
     </div>
 
-    
-      <footer class="post-footer">
-        <div class="post-tags">
-          
-            <a href="/tags/hexo-blog/">hexo,blog</a>
-          
-        </div>
-
-        
-  <nav class="post-nav">
-    
-    
-      <a class="next" href="/rxbus/">
-        <span class="next-text nav-default">rxjava 实现的 rxbus</span>
-        <span class="prev-text nav-mobile">下一篇</span>
-        <i class="iconfont icon-right"></i>
-      </a>
-    
-  </nav>
-
-      </footer>
     
   </article>
 
@@ -234,7 +223,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/"
-           data-title="Hexo 部署blog到多个代码托管网站（多个秘钥的情况）" data-url="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/">
+           data-title="" data-url="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/">
       </div>
     
   </div>
