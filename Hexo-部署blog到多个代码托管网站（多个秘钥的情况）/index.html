@@ -33,40 +33,31 @@
 <link rel="canonical" href="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/"/>
 
 
-<meta name="description" content="hexo 部署 blog 到github，coding
-如果是用同一个秘钥部署配置如下
-
-deploy:
+<meta name="description" content="hexo 部署 blog 到github，coding如果是用同一个秘钥部署配置如下deploy:
   type: git
   repo: 
     coding: git@git.coding.net:norwaya/norwaya.git,master
     github: git@github.com:norwaya/norwaya.github.io.git,master
-  br">
+  branc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 部署 blog 到github，coding">
 <meta property="og:url" content="https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/index.html">
 <meta property="og:site_name" content="Norwaya">
-<meta property="og:description" content="hexo 部署 blog 到github，coding
-如果是用同一个秘钥部署配置如下
-
-deploy:
+<meta property="og:description" content="hexo 部署 blog 到github，coding如果是用同一个秘钥部署配置如下deploy:
   type: git
   repo: 
     coding: git@git.coding.net:norwaya/norwaya.git,master
     github: git@github.com:norwaya/norwaya.github.io.git,master
-  br">
-<meta property="og:updated_time" content="2017-01-13T10:15:31.503Z">
+  branc">
+<meta property="og:updated_time" content="2017-01-13T10:24:39.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 部署 blog 到github，coding">
-<meta name="twitter:description" content="hexo 部署 blog 到github，coding
-如果是用同一个秘钥部署配置如下
-
-deploy:
+<meta name="twitter:description" content="hexo 部署 blog 到github，coding如果是用同一个秘钥部署配置如下deploy:
   type: git
   repo: 
     coding: git@git.coding.net:norwaya/norwaya.git,master
     github: git@github.com:norwaya/norwaya.github.io.git,master
-  br">
+  branc">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
@@ -210,30 +201,34 @@ deploy:
       <div class="post-toc" id="post-toc">
         <h2 class="post-toc-title">文章目录</h2>
         <div class="post-toc-content">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-部署-blog-到github，coding"><span class="toc-text">hexo 部署 blog 到github，coding</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-部署-blog-到github，coding"><span class="toc-text">hexo 部署 blog 到github，coding</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#如果是用同一个秘钥部署配置如下"><span class="toc-text">如果是用同一个秘钥部署配置如下</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
         </div>
       </div>
     
 
     <div class="post-content">
       
-        <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><ul>
-<li>如果是用同一个秘钥部署配置如下</li>
-</ul>
-<pre><code>deploy:
+        <h1 id="hexo-部署-blog-到github，coding"><a href="#hexo-部署-blog-到github，coding" class="headerlink" title="hexo 部署 blog 到github，coding"></a>hexo 部署 blog 到github，coding</h1><h6 id="如果是用同一个秘钥部署配置如下"><a href="#如果是用同一个秘钥部署配置如下" class="headerlink" title="如果是用同一个秘钥部署配置如下"></a>如果是用同一个秘钥部署配置如下</h6><pre><code>deploy:
   type: git
   repo: 
     coding: git@git.coding.net:norwaya/norwaya.git,master
     github: git@github.com:norwaya/norwaya.github.io.git,master
   branch: master
-</code></pre><ul>
-<li>每个代码托管网站有都自己的秘钥的时候 配置</li>
-</ul>
-<a id="more"></a>    
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">	type: git</div><div class="line">	repo: </div><div class="line">		coding: git@git.coding.net:norwaya/norwaya.git,master</div><div class="line">		github: git@github.com:norwaya/norwaya.github.io.git,master</div><div class="line">	branch: master</div></pre></td></tr></table></figure>
-<pre><code>然后要在.ssh 下增加config文件
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># github key</div><div class="line">Host github.com</div><div class="line">    Port 22   </div><div class="line">    HostName github.com    </div><div class="line">    PreferredAuthentications publickey    </div><div class="line">    IdentityFile ~/.ssh/github.id_rsa</div><div class="line"># coding key</div><div class="line">Host git.coding.net    </div><div class="line">	Port 443   </div><div class="line">	HostName git-ssh.coding.net    </div><div class="line">	PreferredAuthentications publickey    </div><div class="line">	IdentityFile ~/.ssh/coding.id_rsa</div></pre></td></tr></table></figure>
-
+</code></pre><a id="more"></a>    
+<p>######每个代码托管网站有都自己的秘钥的时候配置<br>    deploy:<br>        type: git<br>        repo:<br>            coding: git@git.coding.net:norwaya/norwaya.git,master<br>            github: git@github.com:norwaya/norwaya.github.io.git,master<br>        branch: master<br>    然后要在.ssh 下增加config文件</p>
+<pre><code>#github key
+Host github.com
+    Port 22   
+    HostName github.com    
+    PreferredAuthentications publickey    
+    IdentityFile ~/.ssh/github.id_rsa
+# coding key
+Host git.coding.net    
+    Port 443   
+    HostName git-ssh.coding.net    
+    PreferredAuthentications publickey    
+    IdentityFile ~/.ssh/coding.id_rsa
+</code></pre>
       
     </div>
 
