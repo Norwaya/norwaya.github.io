@@ -49,7 +49,7 @@
     coding: git@git.coding.net:norwaya/norwaya.git,master
     github: git@github.com:norwaya/norwaya.github.io.git,master
   branc">
-<meta property="og:updated_time" content="2017-01-13T10:24:39.475Z">
+<meta property="og:updated_time" content="2017-01-13T10:27:51.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 部署 blog 到github，coding">
 <meta name="twitter:description" content="hexo 部署 blog 到github，coding如果是用同一个秘钥部署配置如下deploy:
@@ -201,7 +201,7 @@
       <div class="post-toc" id="post-toc">
         <h2 class="post-toc-title">文章目录</h2>
         <div class="post-toc-content">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-部署-blog-到github，coding"><span class="toc-text">hexo 部署 blog 到github，coding</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#如果是用同一个秘钥部署配置如下"><span class="toc-text">如果是用同一个秘钥部署配置如下</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-部署-blog-到github，coding"><span class="toc-text">hexo 部署 blog 到github，coding</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#如果是用同一个秘钥部署配置如下"><span class="toc-text">如果是用同一个秘钥部署配置如下</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#每个代码托管网站有都自己的秘钥的时候配置"><span class="toc-text">每个代码托管网站有都自己的秘钥的时候配置</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
         </div>
       </div>
     
@@ -215,8 +215,14 @@
     github: git@github.com:norwaya/norwaya.github.io.git,master
   branch: master
 </code></pre><a id="more"></a>    
-<p>######每个代码托管网站有都自己的秘钥的时候配置<br>    deploy:<br>        type: git<br>        repo:<br>            coding: git@git.coding.net:norwaya/norwaya.git,master<br>            github: git@github.com:norwaya/norwaya.github.io.git,master<br>        branch: master<br>    然后要在.ssh 下增加config文件</p>
-<pre><code>#github key
+<h6 id="每个代码托管网站有都自己的秘钥的时候配置"><a href="#每个代码托管网站有都自己的秘钥的时候配置" class="headerlink" title="每个代码托管网站有都自己的秘钥的时候配置"></a>每个代码托管网站有都自己的秘钥的时候配置</h6><pre><code>deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:norwaya/norwaya.git,master
+    github: git@github.com:norwaya/norwaya.github.io.git,master
+  branch: master
+然后要在.ssh 下增加config文件
+#github key
 Host github.com
     Port 22   
     HostName github.com    
