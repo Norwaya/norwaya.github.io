@@ -22,16 +22,16 @@
 然后要在.ssh 下增加config文件
 #github key
 Host github.com
-    Port 22   
-    HostName github.com    
-    PreferredAuthentications publickey    
-    IdentityFile ~/.ssh/github.id_rsa
+   Port 22   
+   HostName github.com    
+   PreferredAuthentications publickey    
+   IdentityFile ~/.ssh/github.id_rsa
 # coding key
 Host git.coding.net    
-    Port 443   
-    HostName git-ssh.coding.net    
-    PreferredAuthentications publickey    
-    IdentityFile ~/.ssh/coding.id_rsa
+  Port 443   
+  HostName git-ssh.coding.net    
+  PreferredAuthentications publickey    
+  IdentityFile ~/.ssh/coding.id_rsa
 </code></pre>]]></content>
     </entry>
     
@@ -39,7 +39,8 @@ Host git.coding.net
       <title><![CDATA[android 视差因子]]></title>
       <url>https://norwaya.github.io/android%20%E8%A7%86%E5%B7%AE%E5%9B%A0%E5%AD%90/</url>
       <content type="html"><![CDATA[<p>Demo:<br><a id="more"></a></p>
-<p>###code<br>    &lt;?xml version=”1.0” encoding=”utf-8”?&gt;<br>    <android.support.design.widget.coordinatorlayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent"><br>        <android.support.design.widget.appbarlayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="160dp"><br>            <android.support.design.widget.collapsingtoolbarlayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:expandedtitlemarginend="64dp" app:contentscrim="?attr/colorPrimary" app:expandedtitlemarginstart="48dp" app:statusbarscrim="?attr/colorPrimary" app:layout_scrollflags="scroll|exitUntilCollapsed"><br>                <imageview android:id="@+id/image" app:layout_collapseparallaxmultiplier="0.6" android:layout_width="match_parent" android:layout_height="match_parent" android:scaletype="fitXY" android:src="@drawable/image" app:layout_collapsemode="parallax"><br>                <android.support.v7.widget.toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapsemode="pin" app:popuptheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.toolbar><br>            </imageview></android.support.design.widget.collapsingtoolbarlayout><br>        </android.support.design.widget.appbarlayout><br>        <android.support.v4.widget.nestedscrollview android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"><br>        </android.support.v4.widget.nestedscrollview><br>        <android.support.design.widget.floatingactionbutton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_input_add" app:backgroundtintmode="multiply" app:layout_anchor="@id/appbar" app:layout_anchorgravity="bottom|end|right"></android.support.design.widget.floatingactionbutton><br>    </android.support.design.widget.coordinatorlayout></p>
+<p>###code<br>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p>
+<p><android.support.design.widget.coordinatorlayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent"><br>    <android.support.design.widget.appbarlayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="160dp"><br>        <android.support.design.widget.collapsingtoolbarlayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:expandedtitlemarginend="64dp" app:contentscrim="?attr/colorPrimary" app:expandedtitlemarginstart="48dp" app:statusbarscrim="?attr/colorPrimary" app:layout_scrollflags="scroll|exitUntilCollapsed"><br>            <imageview android:id="@+id/image" app:layout_collapseparallaxmultiplier="0.6" android:layout_width="match_parent" android:layout_height="match_parent" android:scaletype="fitXY" android:src="@drawable/image" app:layout_collapsemode="parallax"><br>            <android.support.v7.widget.toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapsemode="pin" app:popuptheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.toolbar><br>        </imageview></android.support.design.widget.collapsingtoolbarlayout><br>    </android.support.design.widget.appbarlayout><br>    <android.support.v4.widget.nestedscrollview android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"><br>    </android.support.v4.widget.nestedscrollview><br>    <android.support.design.widget.floatingactionbutton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_input_add" app:backgroundtintmode="multiply" app:layout_anchor="@id/appbar" app:layout_anchorgravity="bottom|end|right"></android.support.design.widget.floatingactionbutton><br></android.support.design.widget.coordinatorlayout></p>
 <p>imageView 注释：<br>layout_collapseMode (折叠模式) - 有两个值:<br>pin -  设置为这个模式时，当CollapsingToolbarLayout完全收缩后，Toolbar还可以保留在屏幕上。<br>parallax - 设置为这个模式时，在内容滚动时，CollapsingToolbarLayout中的View（比如ImageView)也可以同时滚动，实现视差滚动效果，通常和layout_collapseParallaxMultiplier(设置视差因子)搭配使用。<br>layout_collapseParallaxMultiplier(视差因子) - 设置视差滚动因子，值为：0~1。  具体效果自行测试</p>
 ]]></content>
     </entry>
