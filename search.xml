@@ -4,6 +4,118 @@
   
     
     <entry>
+      <title><![CDATA[NormalAdapter]]></title>
+      <url>https://norwaya.github.io/NormalAdapter-1/</url>
+      <content type="html"><![CDATA[<h1 id="通用的RecyclerView-Adapter"><a href="#通用的RecyclerView-Adapter" class="headerlink" title="通用的RecyclerView.Adapter"></a>通用的RecyclerView.Adapter</h1><a id="more"></a>
+<pre><code> package norwaya.android.com.adapterlibrary;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by admin on 2017/1/14.
+ */
+
+public class NormalAdapter&lt;T&gt; extends RecyclerView.Adapter&lt;NormalAdapter.ViewHolder&gt; {
+
+
+List&lt;T&gt; list = new ArrayList&lt;&gt;();
+LayoutInflater inflater;
+
+OnCreateViewHolderListener mOnCreateViewHolderListener;
+OnBindViewHolderListener mOnBindViewHolderListener;
+
+
+public NormalAdapter() {
+}
+public static NormalAdapter newInstance(){
+    return new NormalAdapter();
+}
+public NormalAdapter createView(OnCreateViewHolderListener mOnCreateViewHolderListener) {
+    this.mOnCreateViewHolderListener = mOnCreateViewHolderListener;
+    return this;
+}
+
+public NormalAdapter bindView(OnBindViewHolderListener mOnBindViewHolderListener) {
+    this.mOnBindViewHolderListener = mOnBindViewHolderListener;
+    return this;
+}
+
+public void bindSource(List&lt;? extends T&gt; list) {
+    this.list = (List&lt;T&gt;) list;
+    notifyDataSetChanged();
+}
+
+public interface OnCreateViewHolderListener {
+    ViewHolder createViewHoler(ViewGroup parent, int viewType);
+}
+
+/**
+ * Created by admin on 2017/1/14.
+ */
+public interface OnBindViewHolderListener {
+    void onBindViewHolder(ViewHolder holder, int position);
+}
+
+@Override
+public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    if (mOnCreateViewHolderListener != null) {
+        return mOnCreateViewHolderListener.createViewHoler(parent, viewType);
+    }
+    return null;
+}
+
+@Override
+public void onBindViewHolder(ViewHolder holder, int position) {
+    if (mOnBindViewHolderListener != null) {
+        mOnBindViewHolderListener.onBindViewHolder(holder, position);
+    }
+}
+
+@Override
+public int getItemCount() {
+    return list.size();
+}
+
+public abstract static class ViewHolder extends RecyclerView.ViewHolder {
+
+    public ViewHolder(View itemView) {
+        super(itemView);
+    }
+}
+</code></pre><p>}</p>
+<h1 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h1><pre><code>NormalAdapter adapter = NormalAdapter.newInstance()
+  .createView(new NormalAdapter.OnCreateViewHolderListener() {
+        @Override
+        public NormalAdapter.ViewHolder createViewHoler(ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.recyclerview_item, parent, false);
+            return new ViewHolder(view);
+        }
+    })
+    .bindView(new NormalAdapter.OnBindViewHolderListener() {
+        @Override
+        public void onBindViewHolder(NormalAdapter.ViewHolder holder, int position) {
+            ViewHolder viewHolder = (ViewHolder) holder;
+            viewHolder.tv1.setText(position + &quot;&quot;);
+            viewHolder.tv2.setText(array[position]);
+        }
+    });
+</code></pre>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[NormalAdapter]]></title>
+      <url>https://norwaya.github.io/NormalAdapter/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hexo deploy to github and coding]]></title>
       <url>https://norwaya.github.io/hexo-deployment/</url>
       <content type="html"><![CDATA[<h6 id="如果是用同一个秘钥部署配置如下"><a href="#如果是用同一个秘钥部署配置如下" class="headerlink" title="如果是用同一个秘钥部署配置如下"></a>如果是用同一个秘钥部署配置如下</h6><pre><code>deploy:

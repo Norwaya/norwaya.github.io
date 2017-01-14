@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://norwaya.github.io/"/>
-  <updated>2017-01-14T01:40:30.800Z</updated>
+  <updated>2017-01-14T09:35:43.535Z</updated>
   <id>https://norwaya.github.io/</id>
   
   <author>
@@ -14,6 +14,144 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NormalAdapter</title>
+    <link href="https://norwaya.github.io/NormalAdapter-1/"/>
+    <id>https://norwaya.github.io/NormalAdapter-1/</id>
+    <published>2017-01-14T09:32:00.000Z</published>
+    <updated>2017-01-14T09:35:43.535Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="通用的RecyclerView-Adapter"><a href="#通用的RecyclerView-Adapter" class="headerlink" title="通用的RecyclerView.Adapter"></a>通用的RecyclerView.Adapter</h1><a id="more"></a>
+<pre><code> package norwaya.android.com.adapterlibrary;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by admin on 2017/1/14.
+ */
+
+public class NormalAdapter&lt;T&gt; extends RecyclerView.Adapter&lt;NormalAdapter.ViewHolder&gt; {
+
+
+List&lt;T&gt; list = new ArrayList&lt;&gt;();
+LayoutInflater inflater;
+
+OnCreateViewHolderListener mOnCreateViewHolderListener;
+OnBindViewHolderListener mOnBindViewHolderListener;
+
+
+public NormalAdapter() {
+}
+public static NormalAdapter newInstance(){
+    return new NormalAdapter();
+}
+public NormalAdapter createView(OnCreateViewHolderListener mOnCreateViewHolderListener) {
+    this.mOnCreateViewHolderListener = mOnCreateViewHolderListener;
+    return this;
+}
+
+public NormalAdapter bindView(OnBindViewHolderListener mOnBindViewHolderListener) {
+    this.mOnBindViewHolderListener = mOnBindViewHolderListener;
+    return this;
+}
+
+public void bindSource(List&lt;? extends T&gt; list) {
+    this.list = (List&lt;T&gt;) list;
+    notifyDataSetChanged();
+}
+
+public interface OnCreateViewHolderListener {
+    ViewHolder createViewHoler(ViewGroup parent, int viewType);
+}
+
+/**
+ * Created by admin on 2017/1/14.
+ */
+public interface OnBindViewHolderListener {
+    void onBindViewHolder(ViewHolder holder, int position);
+}
+
+@Override
+public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    if (mOnCreateViewHolderListener != null) {
+        return mOnCreateViewHolderListener.createViewHoler(parent, viewType);
+    }
+    return null;
+}
+
+@Override
+public void onBindViewHolder(ViewHolder holder, int position) {
+    if (mOnBindViewHolderListener != null) {
+        mOnBindViewHolderListener.onBindViewHolder(holder, position);
+    }
+}
+
+@Override
+public int getItemCount() {
+    return list.size();
+}
+
+public abstract static class ViewHolder extends RecyclerView.ViewHolder {
+
+    public ViewHolder(View itemView) {
+        super(itemView);
+    }
+}
+</code></pre><p>}</p>
+<h1 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h1><pre><code>NormalAdapter adapter = NormalAdapter.newInstance()
+  .createView(new NormalAdapter.OnCreateViewHolderListener() {
+        @Override
+        public NormalAdapter.ViewHolder createViewHoler(ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.recyclerview_item, parent, false);
+            return new ViewHolder(view);
+        }
+    })
+    .bindView(new NormalAdapter.OnBindViewHolderListener() {
+        @Override
+        public void onBindViewHolder(NormalAdapter.ViewHolder holder, int position) {
+            ViewHolder viewHolder = (ViewHolder) holder;
+            viewHolder.tv1.setText(position + &quot;&quot;);
+            viewHolder.tv2.setText(array[position]);
+        }
+    });
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;通用的RecyclerView-Adapter&quot;&gt;&lt;a href=&quot;#通用的RecyclerView-Adapter&quot; class=&quot;headerlink&quot; title=&quot;通用的RecyclerView.Adapter&quot;&gt;&lt;/a&gt;通用的RecyclerView.Adapter&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="coding" scheme="https://norwaya.github.io/categories/coding/"/>
+    
+    
+      <category term="android" scheme="https://norwaya.github.io/tags/android/"/>
+    
+      <category term="adapter" scheme="https://norwaya.github.io/tags/adapter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NormalAdapter</title>
+    <link href="https://norwaya.github.io/NormalAdapter/"/>
+    <id>https://norwaya.github.io/NormalAdapter/</id>
+    <published>2017-01-14T09:31:36.000Z</published>
+    <updated>2017-01-14T09:31:36.820Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo deploy to github and coding</title>
@@ -65,11 +203,11 @@ Host git.coding.net
       <category term="编程" scheme="https://norwaya.github.io/categories/programming/"/>
     
     
+      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
+    
       <category term="github" scheme="https://norwaya.github.io/tags/github/"/>
     
       <category term="coding" scheme="https://norwaya.github.io/tags/coding/"/>
-    
-      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
     
       <category term="部署" scheme="https://norwaya.github.io/tags/%E9%83%A8%E7%BD%B2/"/>
     
@@ -461,11 +599,11 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
       <category term="blog" scheme="https://norwaya.github.io/categories/hexo/blog/"/>
     
     
-      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
-    
       <category term="markdown" scheme="https://norwaya.github.io/tags/markdown/"/>
     
       <category term="start" scheme="https://norwaya.github.io/tags/start/"/>
+    
+      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
     
   </entry>
   
