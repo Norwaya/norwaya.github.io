@@ -80,7 +80,7 @@ Host git.coding.net
     <link href="https://norwaya.github.io/android%20%E8%A7%86%E5%B7%AE%E5%9B%A0%E5%AD%90/"/>
     <id>https://norwaya.github.io/android 视差因子/</id>
     <published>2017-01-13T10:10:35.000Z</published>
-    <updated>2017-01-13T10:33:24.723Z</updated>
+    <updated>2017-01-14T01:26:07.931Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo:"></a>Demo:</h1><a id="more"></a>
 <h1 id="code"><a href="#code" class="headerlink" title="code"></a>code</h1><pre><code> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -101,14 +101,14 @@ Host git.coding.net
             app:expandedTitleMarginStart=&quot;48dp&quot;
             app:statusBarScrim=&quot;?attr/colorPrimary&quot;
             app:layout_scrollFlags=&quot;scroll|exitUntilCollapsed&quot;&gt;
-            &lt;ImageView
-                android:id=&quot;@+id/image&quot;
-                app:layout_collapseParallaxMultiplier=&quot;0.6&quot;
-                android:layout_width=&quot;match_parent&quot;
-                android:layout_height=&quot;match_parent&quot;
-                android:scaleType=&quot;fitXY&quot;
-                android:src=&quot;@drawable/image&quot;
-                app:layout_collapseMode=&quot;parallax&quot; /&gt;
+    &lt;ImageView
+        android:id=&quot;@+id/image&quot;
+        app:layout_collapseParallaxMultiplier=&quot;0.6&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;
+        android:scaleType=&quot;fitXY&quot;
+        android:src=&quot;@drawable/image&quot;
+        app:layout_collapseMode=&quot;parallax&quot; /&gt;
             &lt;android.support.v7.widget.Toolbar
                 android:id=&quot;@+id/toolbar&quot;
                 android:layout_width=&quot;match_parent&quot;

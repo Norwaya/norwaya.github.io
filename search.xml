@@ -57,14 +57,14 @@ Host git.coding.net
             app:expandedTitleMarginStart=&quot;48dp&quot;
             app:statusBarScrim=&quot;?attr/colorPrimary&quot;
             app:layout_scrollFlags=&quot;scroll|exitUntilCollapsed&quot;&gt;
-            &lt;ImageView
-                android:id=&quot;@+id/image&quot;
-                app:layout_collapseParallaxMultiplier=&quot;0.6&quot;
-                android:layout_width=&quot;match_parent&quot;
-                android:layout_height=&quot;match_parent&quot;
-                android:scaleType=&quot;fitXY&quot;
-                android:src=&quot;@drawable/image&quot;
-                app:layout_collapseMode=&quot;parallax&quot; /&gt;
+    &lt;ImageView
+        android:id=&quot;@+id/image&quot;
+        app:layout_collapseParallaxMultiplier=&quot;0.6&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;
+        android:scaleType=&quot;fitXY&quot;
+        android:src=&quot;@drawable/image&quot;
+        app:layout_collapseMode=&quot;parallax&quot; /&gt;
             &lt;android.support.v7.widget.Toolbar
                 android:id=&quot;@+id/toolbar&quot;
                 android:layout_width=&quot;match_parent&quot;
