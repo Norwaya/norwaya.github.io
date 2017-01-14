@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://norwaya.github.io/"/>
-  <updated>2017-01-14T00:24:56.749Z</updated>
+  <updated>2017-01-14T00:26:25.773Z</updated>
   <id>https://norwaya.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo 部署 blog 到github，coding</title>
+    <title>hexo部署blog到github,coding</title>
     <link href="https://norwaya.github.io/Hexo-%E9%83%A8%E7%BD%B2blog%E5%88%B0%E5%A4%9A%E4%B8%AA%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E7%BD%91%E7%AB%99%EF%BC%88%E5%A4%9A%E4%B8%AA%E7%A7%98%E9%92%A5%E7%9A%84%E6%83%85%E5%86%B5%EF%BC%89/"/>
     <id>https://norwaya.github.io/Hexo-部署blog到多个代码托管网站（多个秘钥的情况）/</id>
     <published>2017-01-13T10:11:22.000Z</published>
-    <updated>2017-01-14T00:24:56.749Z</updated>
+    <updated>2017-01-14T00:26:25.773Z</updated>
     
     <content type="html"><![CDATA[<h6 id="如果是用同一个秘钥部署配置如下"><a href="#如果是用同一个秘钥部署配置如下" class="headerlink" title="如果是用同一个秘钥部署配置如下"></a>如果是用同一个秘钥部署配置如下</h6><pre><code>deploy:
   type: git
@@ -65,11 +65,11 @@ Host git.coding.net
       <category term="编程" scheme="https://norwaya.github.io/categories/programming/"/>
     
     
-      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
-    
       <category term="github" scheme="https://norwaya.github.io/tags/github/"/>
     
       <category term="coding" scheme="https://norwaya.github.io/tags/coding/"/>
+    
+      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
     
       <category term="部署" scheme="https://norwaya.github.io/tags/%E9%83%A8%E7%BD%B2/"/>
     
@@ -230,9 +230,9 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
       <category term="java" scheme="https://norwaya.github.io/categories/java/"/>
     
     
-      <category term="java" scheme="https://norwaya.github.io/tags/java/"/>
-    
       <category term="android" scheme="https://norwaya.github.io/tags/android/"/>
+    
+      <category term="java" scheme="https://norwaya.github.io/tags/java/"/>
     
       <category term="rxbus" scheme="https://norwaya.github.io/tags/rxbus/"/>
     
@@ -242,83 +242,110 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
   
   <entry>
     <title>我的第一篇hexo文章</title>
-    <link href="https://norwaya.github.io/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87hexo%E6%96%87%E7%AB%A0/"/>
-    <id>https://norwaya.github.io/我的第一篇hexo文章/</id>
+    <link href="https://norwaya.github.io/norwaya.github.io/"/>
+    <id>https://norwaya.github.io/norwaya.github.io/</id>
     <published>2017-01-13T02:06:53.000Z</published>
-    <updated>2017-01-13T02:59:50.553Z</updated>
+    <updated>2017-01-14T01:25:42.510Z</updated>
     
     <content type="html"><![CDATA[<h1 id="你好-hexo"><a href="#你好-hexo" class="headerlink" title="你好 hexo"></a>你好 hexo</h1><pre><code>这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。
 存档
-</code></pre><h1 id="blog-settings"><a href="#blog-settings" class="headerlink" title="blog settings"></a>blog settings</h1><p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo blog 主题配置教程</a><br><a id="more"></a></p>
-<ul>
-<li>实例</li>
-</ul>
-<ul>
-<li>你好<br>-世界<br>— 你好啊<h1 id="你好-hexo-1"><a href="#你好-hexo-1" class="headerlink" title="你好 hexo"></a>你好 hexo</h1>  这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。<br>  存档</li>
-</ul>
-<ul>
-<li>实例</li>
-</ul>
-<ul>
-<li>你好<br>-世界<br>— 你好啊<h1 id="你好-hexo-2"><a href="#你好-hexo-2" class="headerlink" title="你好 hexo"></a>你好 hexo</h1>  这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。<br>  存档</li>
-</ul>
-<ul>
-<li>实例</li>
-</ul>
-<ul>
-<li>你好<br>-世界<br>— 你好啊<h1 id="你好-hexo-3"><a href="#你好-hexo-3" class="headerlink" title="你好 hexo"></a>你好 hexo</h1>  这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。<br>  存档</li>
-</ul>
-<ul>
-<li>实例</li>
-</ul>
-<ul>
-<li>你好<br>-世界<br>— 你好啊<h1 id="你好-hexo-4"><a href="#你好-hexo-4" class="headerlink" title="你好 hexo"></a>你好 hexo</h1>  这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。<br>  存档</li>
-</ul>
-<ul>
-<li>实例</li>
-</ul>
-<ul>
-<li>你好<br>-世界<br>— 你好啊<h1 id="你好-hexo-5"><a href="#你好-hexo-5" class="headerlink" title="你好 hexo"></a>你好 hexo</h1>  这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。<br>  存档</li>
-</ul>
-<ul>
-<li>实例</li>
-</ul>
-<ul>
-<li>你好<br>-世界<br>— 你好啊<h1 id="你好-hexo-6"><a href="#你好-hexo-6" class="headerlink" title="你好 hexo"></a>你好 hexo</h1>  这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。<br>  存档</li>
-</ul>
-<ul>
-<li>实例</li>
-</ul>
-<ul>
-<li>你好<br>-世界<br>— 你好啊</li>
-</ul>
+</code></pre><h1 id="blog-settings"><a href="#blog-settings" class="headerlink" title="blog settings"></a>blog settings</h1><pre><code>[hexo blog 主题配置教程](https://github.com/litten/hexo-theme-yilia) 
+[hexo 官方配置教程](https://hexo.io/zh-cn/docs/) 
+</code></pre><p><img src="http://p1.bpimg.com/4851/d7ba213a3ac9372d.png" alt="这里写图片描述"><br><a id="more"></a></p>
+<h1 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h1><h2 id="site-网站"><a href="#site-网站" class="headerlink" title="site(网站)"></a>site(网站)</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td style="text-align:left">网站标题</td>
+</tr>
+<tr>
+<td>subtitle</td>
+<td style="text-align:left">网站副标题</td>
+</tr>
+<tr>
+<td>description</td>
+<td style="text-align:left">网站描述</td>
+</tr>
+<tr>
+<td>author</td>
+<td style="text-align:left">您的名字</td>
+</tr>
+<tr>
+<td>language</td>
+<td style="text-align:left">网站使用的语言</td>
+</tr>
+<tr>
+<td>timezone</td>
+<td style="text-align:left">网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York, Japan, 和 UTC 。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="url"><a href="#url" class="headerlink" title="url"></a>url</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th style="text-align:left">描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td style="text-align:left">网址</td>
+</tr>
+<tr>
+<td>root</td>
+<td style="text-align:left">网站根目录</td>
+</tr>
+<tr>
+<td>permalink</td>
+<td style="text-align:left">文章的 永久链接 格式</td>
+<td>:year/:month/:day/:title/</td>
+</tr>
+<tr>
+<td>permalink_default</td>
+<td style="text-align:left">永久链接中各部分的默认值</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h5 id="网站存放在子目录"><a href="#网站存放在子目录" class="headerlink" title="网站存放在子目录"></a>网站存放在子目录</h5><p>如果您的网站存放在子目录中，例如 <a href="http://yoursite.com/blog，则请将您的" target="_blank" rel="external">http://yoursite.com/blog，则请将您的</a> url 设为 <a href="http://yoursite.com/blog" target="_blank" rel="external">http://yoursite.com/blog</a> 并把 root 设为 /blog/。</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
     
       &lt;h1 id=&quot;你好-hexo&quot;&gt;&lt;a href=&quot;#你好-hexo&quot; class=&quot;headerlink&quot; title=&quot;你好 hexo&quot;&gt;&lt;/a&gt;你好 hexo&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。
 存档
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;blog-settings&quot;&gt;&lt;a href=&quot;#blog-settings&quot; class=&quot;headerlink&quot; title=&quot;blog settings&quot;&gt;&lt;/a&gt;blog settings&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/litten/hexo-theme-yilia&quot;&gt;hexo blog 主题配置教程&lt;/a&gt;&lt;br&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;blog-settings&quot;&gt;&lt;a href=&quot;#blog-settings&quot; class=&quot;headerlink&quot; title=&quot;blog settings&quot;&gt;&lt;/a&gt;blog settings&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[hexo blog 主题配置教程](https://github.com/litten/hexo-theme-yilia) 
+[hexo 官方配置教程](https://hexo.io/zh-cn/docs/) 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://p1.bpimg.com/4851/d7ba213a3ac9372d.png&quot; alt=&quot;这里写图片描述&quot;&gt;&lt;br&gt;
     
     </summary>
     
       <category term="编程" scheme="https://norwaya.github.io/categories/programming/"/>
     
     
-      <category term="第一篇" scheme="https://norwaya.github.io/tags/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
-    
       <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
+    
+      <category term="第一篇" scheme="https://norwaya.github.io/tags/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
     
       <category term="blog" scheme="https://norwaya.github.io/tags/blog/"/>
     
   </entry>
   
   <entry>
-    <title>Hello Hexo Blog</title>
+    <title>Hello world</title>
     <link href="https://norwaya.github.io/Hello%20Hexo/"/>
     <id>https://norwaya.github.io/Hello Hexo/</id>
     <published>2017-01-12T07:36:29.645Z</published>
-    <updated>2017-01-13T06:34:22.559Z</updated>
+    <updated>2017-01-14T00:55:53.704Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
@@ -338,6 +365,10 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
     
     </summary>
+    
+      <category term="hexo" scheme="https://norwaya.github.io/categories/hexo/"/>
+    
+      <category term="blog" scheme="https://norwaya.github.io/categories/hexo/blog/"/>
     
     
       <category term="markdown,start,hexo" scheme="https://norwaya.github.io/tags/markdown-start-hexo/"/>
