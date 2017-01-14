@@ -2,35 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://norwaya.github.io/hexo%20settings/</loc>
+    <loc>https://norwaya.github.io/hexo-deployment/</loc>
     
-    <lastmod>2017-01-14T01:29:20.917Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://norwaya.github.io/hexo%20deployment/</loc>
-    
-    <lastmod>2017-01-14T01:29:07.429Z</lastmod>
+    <lastmod>2017-01-14T01:38:06.828Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://norwaya.github.io/android%20%E8%A7%86%E5%B7%AE%E5%9B%A0%E5%AD%90/</loc>
+    <loc>https://norwaya.github.io/hello-world/</loc>
     
-    <lastmod>2017-01-14T01:26:07.931Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://norwaya.github.io/Hello%20Hexo/</loc>
-    
-    <lastmod>2017-01-14T00:55:53.704Z</lastmod>
+    <lastmod>2017-01-14T01:38:04.607Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://norwaya.github.io/rxbus/</loc>
+    <loc>https://norwaya.github.io/rxjava-rxbus/</loc>
+    
+    <lastmod>2017-01-14T01:37:06.982Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://norwaya.github.io/android-ParallaxMultiplier/</loc>
+    
+    <lastmod>2017-01-14T01:36:52.381Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://norwaya.github.io/hexo-settings/</loc>
+    
+    <lastmod>2017-01-14T01:35:45.646Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://norwaya.github.io/rxjava%20%E5%AE%9E%E7%8E%B0%20rxbus/</loc>
     
     <lastmod>2017-01-13T06:37:29.720Z</lastmod>
     

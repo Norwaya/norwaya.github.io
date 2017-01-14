@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://norwaya.github.io/"/>
-  <updated>2017-01-14T01:29:07.429Z</updated>
+  <updated>2017-01-14T01:38:06.828Z</updated>
   <id>https://norwaya.github.io/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>hexo部署blog到github,coding</title>
-    <link href="https://norwaya.github.io/hexo%20deployment/"/>
-    <id>https://norwaya.github.io/hexo deployment/</id>
+    <link href="https://norwaya.github.io/hexo-deployment/"/>
+    <id>https://norwaya.github.io/hexo-deployment/</id>
     <published>2017-01-13T10:11:22.000Z</published>
-    <updated>2017-01-14T01:29:07.429Z</updated>
+    <updated>2017-01-14T01:38:06.828Z</updated>
     
     <content type="html"><![CDATA[<h6 id="如果是用同一个秘钥部署配置如下"><a href="#如果是用同一个秘钥部署配置如下" class="headerlink" title="如果是用同一个秘钥部署配置如下"></a>如果是用同一个秘钥部署配置如下</h6><pre><code>deploy:
   type: git
@@ -77,10 +77,10 @@ Host git.coding.net
   
   <entry>
     <title>android 视差因子</title>
-    <link href="https://norwaya.github.io/android%20%E8%A7%86%E5%B7%AE%E5%9B%A0%E5%AD%90/"/>
-    <id>https://norwaya.github.io/android 视差因子/</id>
+    <link href="https://norwaya.github.io/android-ParallaxMultiplier/"/>
+    <id>https://norwaya.github.io/android-ParallaxMultiplier/</id>
     <published>2017-01-13T10:10:35.000Z</published>
-    <updated>2017-01-14T01:26:07.931Z</updated>
+    <updated>2017-01-14T01:36:52.381Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo:"></a>Demo:</h1><a id="more"></a>
 <h1 id="code"><a href="#code" class="headerlink" title="code"></a>code</h1><pre><code> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -152,8 +152,98 @@ Host git.coding.net
   
   <entry>
     <title>rxjava 实现的 rxbus</title>
-    <link href="https://norwaya.github.io/rxbus/"/>
-    <id>https://norwaya.github.io/rxbus/</id>
+    <link href="https://norwaya.github.io/rxjava-rxbus/"/>
+    <id>https://norwaya.github.io/rxjava-rxbus/</id>
+    <published>2017-01-13T05:20:13.000Z</published>
+    <updated>2017-01-14T01:37:06.982Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
+compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
+</code></pre><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><a id="more"></a>
+<pre><code>public   class MessageEvent {
+private String text;
+
+public MessageEvent(String text) {
+    this.text = text;
+}
+
+public String getText() {
+    return text;
+}
+</code></pre><p>}</p>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><pre><code>import io.reactivex.Observable;
+import io.reactivex.subjects.PublishSubject;
+import io.reactivex.subjects.Subject;
+/**
+ * Created by HanHailong on 15/10/9.
+ */
+public class RxBus {
+
+    private static volatile RxBus mDefaultInstance;
+
+    private RxBus() {
+    }
+
+    public static RxBus getDefault() {
+        if (mDefaultInstance == null) {
+            synchronized (RxBus.class) {
+                if (mDefaultInstance == null) {
+                    mDefaultInstance = new RxBus();
+                }
+            }
+        }
+        return mDefaultInstance;
+    }
+
+    private final Subject&lt;Object&gt; _bus = PublishSubject.create().toSerialized();
+
+    public void send(Object o) {
+        _bus.onNext(o);
+    }
+
+    public &lt;T&gt; Observable&lt;T&gt; toObservable(Class&lt;T&gt; classType) {
+        return _bus.ofType(classType);
+    }
+}
+</code></pre><h2 id="接受事件"><a href="#接受事件" class="headerlink" title="接受事件"></a>接受事件</h2><pre><code>Disposable disposable = RxBus.getDefault().toObservable(MessageEvent.class).subscribe(new Consumer&lt;MessageEvent&gt;() {
+        @Override
+        public void accept(MessageEvent event) throws Exception {
+            Toast.makeText(MainActivity.this, TAG + event.getText(), Toast.LENGTH_LONG).show();
+            tv.setText(event.getText());
+            Log.d(TAG, &quot;onMessageEvent: &quot;);
+        }
+    });
+</code></pre><h2 id="发送事件"><a href="#发送事件" class="headerlink" title="发送事件"></a>发送事件</h2><pre><code>RxBus.getDefault().send(new MessageEvent(&quot; hello rx bus&quot;));
+</code></pre><h2 id="取消订阅"><a href="#取消订阅" class="headerlink" title="取消订阅"></a>取消订阅</h2><pre><code>if(disposable != null &amp;&amp; disposable.isDisposed()){
+        disposable.dispose();
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;implemetns&quot;&gt;&lt;a href=&quot;#implemetns&quot; class=&quot;headerlink&quot; title=&quot;implemetns&quot;&gt;&lt;/a&gt;implemetns&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;compile &amp;apos;io.reactivex.rxjava2:rxandroid:2.0.1&amp;apos;
+compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="https://norwaya.github.io/categories/java/"/>
+    
+    
+      <category term="android" scheme="https://norwaya.github.io/tags/android/"/>
+    
+      <category term="java" scheme="https://norwaya.github.io/tags/java/"/>
+    
+      <category term="rxbus" scheme="https://norwaya.github.io/tags/rxbus/"/>
+    
+      <category term="rxjava" scheme="https://norwaya.github.io/tags/rxjava/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>rxjava 实现的 rxbus</title>
+    <link href="https://norwaya.github.io/rxjava%20%E5%AE%9E%E7%8E%B0%20rxbus/"/>
+    <id>https://norwaya.github.io/rxjava 实现 rxbus/</id>
     <published>2017-01-13T05:20:13.000Z</published>
     <updated>2017-01-13T06:37:29.720Z</updated>
     
@@ -242,10 +332,10 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
   
   <entry>
     <title>我的第一篇hexo文章</title>
-    <link href="https://norwaya.github.io/hexo%20settings/"/>
-    <id>https://norwaya.github.io/hexo settings/</id>
+    <link href="https://norwaya.github.io/hexo-settings/"/>
+    <id>https://norwaya.github.io/hexo-settings/</id>
     <published>2017-01-13T02:06:53.000Z</published>
-    <updated>2017-01-14T01:29:20.917Z</updated>
+    <updated>2017-01-14T01:35:45.646Z</updated>
     
     <content type="html"><![CDATA[<h1 id="你好-hexo"><a href="#你好-hexo" class="headerlink" title="你好 hexo"></a>你好 hexo</h1><pre><code>这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。
 存档
@@ -342,10 +432,10 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
   
   <entry>
     <title>Hello world</title>
-    <link href="https://norwaya.github.io/Hello%20Hexo/"/>
-    <id>https://norwaya.github.io/Hello Hexo/</id>
+    <link href="https://norwaya.github.io/hello-world/"/>
+    <id>https://norwaya.github.io/hello-world/</id>
     <published>2017-01-12T07:36:29.645Z</published>
-    <updated>2017-01-14T00:55:53.704Z</updated>
+    <updated>2017-01-14T01:38:04.607Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
@@ -371,7 +461,11 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
       <category term="blog" scheme="https://norwaya.github.io/categories/hexo/blog/"/>
     
     
-      <category term="markdown,start,hexo" scheme="https://norwaya.github.io/tags/markdown-start-hexo/"/>
+      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
+    
+      <category term="markdown" scheme="https://norwaya.github.io/tags/markdown/"/>
+    
+      <category term="start" scheme="https://norwaya.github.io/tags/start/"/>
     
   </entry>
   

@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[hexo部署blog到github,coding]]></title>
-      <url>https://norwaya.github.io/hexo%20deployment/</url>
+      <url>https://norwaya.github.io/hexo-deployment/</url>
       <content type="html"><![CDATA[<h6 id="如果是用同一个秘钥部署配置如下"><a href="#如果是用同一个秘钥部署配置如下" class="headerlink" title="如果是用同一个秘钥部署配置如下"></a>如果是用同一个秘钥部署配置如下</h6><pre><code>deploy:
   type: git
   repo: 
@@ -37,7 +37,7 @@ Host git.coding.net
     
     <entry>
       <title><![CDATA[android 视差因子]]></title>
-      <url>https://norwaya.github.io/android%20%E8%A7%86%E5%B7%AE%E5%9B%A0%E5%AD%90/</url>
+      <url>https://norwaya.github.io/android-ParallaxMultiplier/</url>
       <content type="html"><![CDATA[<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo:"></a>Demo:</h1><a id="more"></a>
 <h1 id="code"><a href="#code" class="headerlink" title="code"></a>code</h1><pre><code> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;android.support.design.widget.CoordinatorLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
@@ -92,7 +92,73 @@ Host git.coding.net
     
     <entry>
       <title><![CDATA[rxjava 实现的 rxbus]]></title>
-      <url>https://norwaya.github.io/rxbus/</url>
+      <url>https://norwaya.github.io/rxjava-rxbus/</url>
+      <content type="html"><![CDATA[<h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
+compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
+</code></pre><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><a id="more"></a>
+<pre><code>public   class MessageEvent {
+private String text;
+
+public MessageEvent(String text) {
+    this.text = text;
+}
+
+public String getText() {
+    return text;
+}
+</code></pre><p>}</p>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><pre><code>import io.reactivex.Observable;
+import io.reactivex.subjects.PublishSubject;
+import io.reactivex.subjects.Subject;
+/**
+ * Created by HanHailong on 15/10/9.
+ */
+public class RxBus {
+
+    private static volatile RxBus mDefaultInstance;
+
+    private RxBus() {
+    }
+
+    public static RxBus getDefault() {
+        if (mDefaultInstance == null) {
+            synchronized (RxBus.class) {
+                if (mDefaultInstance == null) {
+                    mDefaultInstance = new RxBus();
+                }
+            }
+        }
+        return mDefaultInstance;
+    }
+
+    private final Subject&lt;Object&gt; _bus = PublishSubject.create().toSerialized();
+
+    public void send(Object o) {
+        _bus.onNext(o);
+    }
+
+    public &lt;T&gt; Observable&lt;T&gt; toObservable(Class&lt;T&gt; classType) {
+        return _bus.ofType(classType);
+    }
+}
+</code></pre><h2 id="接受事件"><a href="#接受事件" class="headerlink" title="接受事件"></a>接受事件</h2><pre><code>Disposable disposable = RxBus.getDefault().toObservable(MessageEvent.class).subscribe(new Consumer&lt;MessageEvent&gt;() {
+        @Override
+        public void accept(MessageEvent event) throws Exception {
+            Toast.makeText(MainActivity.this, TAG + event.getText(), Toast.LENGTH_LONG).show();
+            tv.setText(event.getText());
+            Log.d(TAG, &quot;onMessageEvent: &quot;);
+        }
+    });
+</code></pre><h2 id="发送事件"><a href="#发送事件" class="headerlink" title="发送事件"></a>发送事件</h2><pre><code>RxBus.getDefault().send(new MessageEvent(&quot; hello rx bus&quot;));
+</code></pre><h2 id="取消订阅"><a href="#取消订阅" class="headerlink" title="取消订阅"></a>取消订阅</h2><pre><code>if(disposable != null &amp;&amp; disposable.isDisposed()){
+        disposable.dispose();
+}
+</code></pre>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[rxjava 实现的 rxbus]]></title>
+      <url>https://norwaya.github.io/rxjava%20%E5%AE%9E%E7%8E%B0%20rxbus/</url>
       <content type="html"><![CDATA[<h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
 compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
 </code></pre><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><a id="more"></a>
@@ -158,7 +224,7 @@ public class RxBus {
     
     <entry>
       <title><![CDATA[我的第一篇hexo文章]]></title>
-      <url>https://norwaya.github.io/hexo%20settings/</url>
+      <url>https://norwaya.github.io/hexo-settings/</url>
       <content type="html"><![CDATA[<h1 id="你好-hexo"><a href="#你好-hexo" class="headerlink" title="你好 hexo"></a>你好 hexo</h1><pre><code>这是我的第一篇hexo文章，当然我本来想写hello world 为题的blog，可是被hexo占了先机，我被迫改了名字。
 存档
 </code></pre><h1 id="blog-settings"><a href="#blog-settings" class="headerlink" title="blog settings"></a>blog settings</h1><pre><code>[hexo blog 主题配置教程](https://github.com/litten/hexo-theme-yilia) 
@@ -234,7 +300,7 @@ public class RxBus {
     
     <entry>
       <title><![CDATA[Hello world]]></title>
-      <url>https://norwaya.github.io/Hello%20Hexo/</url>
+      <url>https://norwaya.github.io/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
 <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
