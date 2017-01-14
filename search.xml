@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[hexo部署blog到github,coding]]></title>
+      <title><![CDATA[Hexo deploy to github and coding]]></title>
       <url>https://norwaya.github.io/hexo-deployment/</url>
       <content type="html"><![CDATA[<h6 id="如果是用同一个秘钥部署配置如下"><a href="#如果是用同一个秘钥部署配置如下" class="headerlink" title="如果是用同一个秘钥部署配置如下"></a>如果是用同一个秘钥部署配置如下</h6><pre><code>deploy:
   type: git
