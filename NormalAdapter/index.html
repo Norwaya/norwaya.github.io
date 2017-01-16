@@ -16,6 +16,8 @@
 
 
 
+  <meta name="keywords" content="android,adapter," />
+
 
 
 
@@ -31,16 +33,16 @@
 <link rel="canonical" href="https://norwaya.github.io/NormalAdapter/"/>
 
 
-<meta name="description" content="Contact me at yinpan_yp@163.com">
+<meta name="description" content="通用的RecyclerView.Adapter">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NormalAdapter">
 <meta property="og:url" content="https://norwaya.github.io/NormalAdapter/index.html">
 <meta property="og:site_name" content="Norwaya">
-<meta property="og:description" content="Contact me at yinpan_yp@163.com">
-<meta property="og:updated_time" content="2017-01-14T09:31:36.820Z">
+<meta property="og:description" content="通用的RecyclerView.Adapter">
+<meta property="og:updated_time" content="2017-01-14T09:35:43.535Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NormalAdapter">
-<meta name="twitter:description" content="Contact me at yinpan_yp@163.com">
+<meta name="twitter:description" content="通用的RecyclerView.Adapter">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.1.0" />
@@ -181,13 +183,143 @@
     </header>
 
     
+      <div class="post-toc" id="post-toc">
+        <h2 class="post-toc-title">文章目录</h2>
+        <div class="post-toc-content">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#通用的RecyclerView-Adapter"><span class="toc-text">通用的RecyclerView.Adapter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Sample"><span class="toc-text">Sample</span></a></li></ol>
+        </div>
+      </div>
+    
 
     <div class="post-content">
       
-        
+        <h1 id="通用的RecyclerView-Adapter"><a href="#通用的RecyclerView-Adapter" class="headerlink" title="通用的RecyclerView.Adapter"></a>通用的RecyclerView.Adapter</h1><a id="more"></a>
+<pre><code> package norwaya.android.com.adapterlibrary;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by admin on 2017/1/14.
+ */
+
+public class NormalAdapter&lt;T&gt; extends RecyclerView.Adapter&lt;NormalAdapter.ViewHolder&gt; {
+
+
+List&lt;T&gt; list = new ArrayList&lt;&gt;();
+LayoutInflater inflater;
+
+OnCreateViewHolderListener mOnCreateViewHolderListener;
+OnBindViewHolderListener mOnBindViewHolderListener;
+
+
+public NormalAdapter() {
+}
+public static NormalAdapter newInstance(){
+    return new NormalAdapter();
+}
+public NormalAdapter createView(OnCreateViewHolderListener mOnCreateViewHolderListener) {
+    this.mOnCreateViewHolderListener = mOnCreateViewHolderListener;
+    return this;
+}
+
+public NormalAdapter bindView(OnBindViewHolderListener mOnBindViewHolderListener) {
+    this.mOnBindViewHolderListener = mOnBindViewHolderListener;
+    return this;
+}
+
+public void bindSource(List&lt;? extends T&gt; list) {
+    this.list = (List&lt;T&gt;) list;
+    notifyDataSetChanged();
+}
+
+public interface OnCreateViewHolderListener {
+    ViewHolder createViewHoler(ViewGroup parent, int viewType);
+}
+
+/**
+ * Created by admin on 2017/1/14.
+ */
+public interface OnBindViewHolderListener {
+    void onBindViewHolder(ViewHolder holder, int position);
+}
+
+@Override
+public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    if (mOnCreateViewHolderListener != null) {
+        return mOnCreateViewHolderListener.createViewHoler(parent, viewType);
+    }
+    return null;
+}
+
+@Override
+public void onBindViewHolder(ViewHolder holder, int position) {
+    if (mOnBindViewHolderListener != null) {
+        mOnBindViewHolderListener.onBindViewHolder(holder, position);
+    }
+}
+
+@Override
+public int getItemCount() {
+    return list.size();
+}
+
+public abstract static class ViewHolder extends RecyclerView.ViewHolder {
+
+    public ViewHolder(View itemView) {
+        super(itemView);
+    }
+}
+</code></pre><p>}</p>
+<h1 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h1><pre><code>NormalAdapter adapter = NormalAdapter.newInstance()
+  .createView(new NormalAdapter.OnCreateViewHolderListener() {
+        @Override
+        public NormalAdapter.ViewHolder createViewHoler(ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.recyclerview_item, parent, false);
+            return new ViewHolder(view);
+        }
+    })
+    .bindView(new NormalAdapter.OnBindViewHolderListener() {
+        @Override
+        public void onBindViewHolder(NormalAdapter.ViewHolder holder, int position) {
+            ViewHolder viewHolder = (ViewHolder) holder;
+            viewHolder.tv1.setText(position + &quot;&quot;);
+            viewHolder.tv2.setText(array[position]);
+        }
+    });
+</code></pre>
       
     </div>
 
+    
+      <footer class="post-footer">
+        <div class="post-tags">
+          
+            <a href="/tags/android/">android</a>
+          
+            <a href="/tags/adapter/">adapter</a>
+          
+        </div>
+
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/hexo-deployment/">
+        <span class="next-text nav-default">Hexo deploy to github and coding</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
     
   </article>
 

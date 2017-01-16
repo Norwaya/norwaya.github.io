@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[NormalAdapter]]></title>
-      <url>https://norwaya.github.io/NormalAdapter-1/</url>
+      <url>https://norwaya.github.io/NormalAdapter/</url>
       <content type="html"><![CDATA[<h1 id="通用的RecyclerView-Adapter"><a href="#通用的RecyclerView-Adapter" class="headerlink" title="通用的RecyclerView.Adapter"></a>通用的RecyclerView.Adapter</h1><a id="more"></a>
 <pre><code> package norwaya.android.com.adapterlibrary;
 
@@ -107,12 +107,6 @@ public abstract static class ViewHolder extends RecyclerView.ViewHolder {
         }
     });
 </code></pre>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[NormalAdapter]]></title>
-      <url>https://norwaya.github.io/NormalAdapter/</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
