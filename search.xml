@@ -204,7 +204,7 @@ Host git.coding.net
     
     <entry>
       <title><![CDATA[rxjava 实现的 rxbus]]></title>
-      <url>https://norwaya.github.io/rxjava-rxbus/</url>
+      <url>https://norwaya.github.io/rxjava%20%E5%AE%9E%E7%8E%B0%20rxbus/</url>
       <content type="html"><![CDATA[<h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
 compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
 </code></pre><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><a id="more"></a>
@@ -270,7 +270,7 @@ public class RxBus {
     
     <entry>
       <title><![CDATA[rxjava 实现的 rxbus]]></title>
-      <url>https://norwaya.github.io/rxjava%20%E5%AE%9E%E7%8E%B0%20rxbus/</url>
+      <url>https://norwaya.github.io/rxjava-rxbus/</url>
       <content type="html"><![CDATA[<h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
 compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
 </code></pre><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><a id="more"></a>

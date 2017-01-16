@@ -290,10 +290,10 @@ Host git.coding.net
   
   <entry>
     <title>rxjava 实现的 rxbus</title>
-    <link href="https://norwaya.github.io/rxjava-rxbus/"/>
-    <id>https://norwaya.github.io/rxjava-rxbus/</id>
+    <link href="https://norwaya.github.io/rxjava%20%E5%AE%9E%E7%8E%B0%20rxbus/"/>
+    <id>https://norwaya.github.io/rxjava 实现 rxbus/</id>
     <published>2017-01-13T05:20:13.000Z</published>
-    <updated>2017-01-14T01:37:06.982Z</updated>
+    <updated>2017-01-13T06:37:29.720Z</updated>
     
     <content type="html"><![CDATA[<h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
 compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
@@ -380,10 +380,10 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
   
   <entry>
     <title>rxjava 实现的 rxbus</title>
-    <link href="https://norwaya.github.io/rxjava%20%E5%AE%9E%E7%8E%B0%20rxbus/"/>
-    <id>https://norwaya.github.io/rxjava 实现 rxbus/</id>
+    <link href="https://norwaya.github.io/rxjava-rxbus/"/>
+    <id>https://norwaya.github.io/rxjava-rxbus/</id>
     <published>2017-01-13T05:20:13.000Z</published>
-    <updated>2017-01-13T06:37:29.720Z</updated>
+    <updated>2017-01-14T01:37:06.982Z</updated>
     
     <content type="html"><![CDATA[<h2 id="implemetns"><a href="#implemetns" class="headerlink" title="implemetns"></a>implemetns</h2><pre><code>compile &apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;
 compile &apos;io.reactivex.rxjava2:rxjava:2.0.4&apos;
