@@ -215,11 +215,11 @@ Host git.coding.net
       <category term="编程" scheme="https://norwaya.github.io/categories/programming/"/>
     
     
+      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
+    
       <category term="github" scheme="https://norwaya.github.io/tags/github/"/>
     
       <category term="coding" scheme="https://norwaya.github.io/tags/coding/"/>
-    
-      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
     
       <category term="部署" scheme="https://norwaya.github.io/tags/%E9%83%A8%E7%BD%B2/"/>
     
@@ -380,9 +380,9 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
       <category term="java" scheme="https://norwaya.github.io/categories/java/"/>
     
     
-      <category term="java" scheme="https://norwaya.github.io/tags/java/"/>
-    
       <category term="android" scheme="https://norwaya.github.io/tags/android/"/>
+    
+      <category term="java" scheme="https://norwaya.github.io/tags/java/"/>
     
       <category term="rxbus" scheme="https://norwaya.github.io/tags/rxbus/"/>
     
@@ -470,9 +470,9 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
       <category term="java" scheme="https://norwaya.github.io/categories/java/"/>
     
     
-      <category term="java" scheme="https://norwaya.github.io/tags/java/"/>
-    
       <category term="android" scheme="https://norwaya.github.io/tags/android/"/>
+    
+      <category term="java" scheme="https://norwaya.github.io/tags/java/"/>
     
       <category term="rxbus" scheme="https://norwaya.github.io/tags/rxbus/"/>
     
@@ -611,11 +611,11 @@ compile &amp;apos;io.reactivex.rxjava2:rxjava:2.0.4&amp;apos;
       <category term="blog" scheme="https://norwaya.github.io/categories/hexo/blog/"/>
     
     
-      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
-    
       <category term="markdown" scheme="https://norwaya.github.io/tags/markdown/"/>
     
       <category term="start" scheme="https://norwaya.github.io/tags/start/"/>
+    
+      <category term="hexo" scheme="https://norwaya.github.io/tags/hexo/"/>
     
   </entry>
   
