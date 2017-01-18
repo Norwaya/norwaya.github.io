@@ -188,7 +188,15 @@
         
 
         
-          
+          <p>在连接数据库之前必须保证SQL Server 2012是采用SQL Server身份验证方式而不是windows身份验证方式。如果在安装时选用了后者，则重新设置如下:<br>        设置SQL Server 2012的身份验证方式：<br>            1.在连接的服务器上右击，选择属性<br>            2.点击左侧上的安全性，在栏目中选择SQL Server和Windows身份验证<br>            3.设置sa的密码和sa登录名<br>                在根目录下，点击安全性-&gt;登录名-&gt;选择sa登录名右击选择属性<br>                点击左侧上的常规，在右侧设置登录名sa和密码<br>            4.设置完账号密码后，在sa登录名的属性里在左侧上点击状态，在右侧的登录下选择启用<br>            5.重启sql server服务器<br>采用了SQL server身份验证的方式后，在所有程序中打开SQL Server配置管理器，在配置管理器窗口的左侧找到SQL Server网络配置，然后展开点击“ ‘数据库名’ 的协议”，将右侧中的协议全部开启。接下来双击TCP/IP协议，选择IP地址在下面的一个栏目中选择一个IP填入IP地址，TCP端口号，活动选择是，已启用选择是。最后SQL Server服务</p>
+<p>先开启Telnet服务：打开“控制面板”→“程序”，“在程序和功能”找到并点击“打开或关闭Windows 功能”进入Windows 功能设置对话框。找到并勾选“Telnet客户端，最后“确定”稍等片刻即可完成安装。除此之外，我们也可通过该向导安装 “TFTP客户端”、“Internet 信息服务”等。</p>
+<p> 安装完成后，Telnet服务默认情况下是禁用的。还需执行“开始”→“运行”，输入services.msc打开服务管理器。找到并双击Telnet服务项，设置其启动方式为“手动”(更安全，只在需要的时候才启用)，最后“启动”该服务“确定”退出即可。<br>打开命令提示符窗口-&gt;输入： telnet 127.0.0.1 1433<br>连接成功会进入一片全黑的界面，连接失败会提示连接失败</p>
+<p>接下来配置环境变量 CLASSPATH：<br>下载Microsoft JDBC Driver 4.0 for SQL Server，解压文件，得到sqljdbc.jar和sqljdbc4.jar。如果使用的是jre1.7版本，则忽略sqljdbc.jar（因为使用不了，而且如果和sqljdbc4.jar一起用会出错）。<br>以下设置均针对jre1.7版本（1.7以下应该也适用）：<br>在D盘新建一个文件夹，命名为sqljdbc4，将sqljdbc4.jar复制一个进去。<br>右击 我的电脑 → 属性 → 高级系统设置（高级） → 环境变量，在系统变量中双击CLASSPATH变量（或选中CLASSPATH后 → 编辑），在最后面追加 “;D:\sqljdbc4 \sqljdbc4.jar” （注意最前面有个 ; ）若不存在CLASSPATH，就新建CLASSPATH变量，并且将其值设为“D:\sqljdbc4 \sqljdbc4.jar”。</p>
+<p>配置完环境变量后，将sqljdbc4.jar类库文件拷贝到D:\Program Files\Java\jdk1.7.0\jre\lib\ext目录下。（拷贝到安装的jdk的jdk\jre\lib\ext的目录下），同时将sqljdbc4.jar类库文件拷贝到D:\Program Files\Java\jre7\lib\ext目录下（拷贝到安装的jdk的jdk\jre\lib\ext的目录下）</p>
+<p>如果是使用Tomcat做服务器，那么需要将sqljdbc4.jar类库文件拷贝到C:\apache-tomcat-7.0.11\lib目录下（tomcat的安装目录）。 同时将sqljdbc4.jar类库文件拷贝到D:\apache-tomcat-7.0.11\webapps\test\WEB-INF\lib目录下（test目录是个人应用）</p>
+<p>给eclipse中的项目添加sqljdbc4.jar包</p>
+<p>经过以上配置即可使用Java通过jdbc连接sql server</p>
+
         
       
     </div>
