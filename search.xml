@@ -8,7 +8,8 @@
       <url>https://norwaya.github.io/%E4%BE%9D%E8%B5%96%E5%8C%85/</url>
       <content type="html"><![CDATA[<h1 id="常用的依赖包"><a href="#常用的依赖包" class="headerlink" title="常用的依赖包"></a>常用的依赖包</h1><h2 id="android-floating-searchview"><a href="#android-floating-searchview" class="headerlink" title="android floating searchview"></a>android floating searchview</h2><pre><code>[android-floating-searchView](https://github.com/arimorty/floatingsearchview.git)
 fragment中实现的searchview 绑定了左侧的drawer。浮动特性的
-</code></pre><h2 id="。。。。。。"><a href="#。。。。。。" class="headerlink" title="。。。。。。"></a>。。。。。。</h2>]]></content>
+</code></pre><p>&lt;!—more-&gt;</p>
+<h2 id="。。。。。。"><a href="#。。。。。。" class="headerlink" title="。。。。。。"></a>。。。。。。</h2>]]></content>
     </entry>
     
     <entry>
@@ -16,29 +17,22 @@ fragment中实现的searchview 绑定了左侧的drawer。浮动特性的
       <url>https://norwaya.github.io/blessing/</url>
       <content type="html"><![CDATA[<h1 id="支付宝五福你集够了吗-揭秘支付宝福字扫描技巧（全文）"><a href="#支付宝五福你集够了吗-揭秘支付宝福字扫描技巧（全文）" class="headerlink" title="支付宝五福你集够了吗 揭秘支付宝福字扫描技巧（全文）"></a>支付宝五福你集够了吗 揭秘支付宝福字扫描技巧（全文）</h1><p>2017年春节，支付宝再次推出了“五福红包”活动，表示要“把欠大家的敬业福都还给大家”。<br><a id="more"></a><br>    <img src="http://cms-bucket.nosdn.127.net/56f3abb5747d40eab9a639da5b42f90020170118151201.png" alt="支付宝五福你集够了吗 揭秘支付宝福字扫描技巧"></p>
 <p>支付宝五福你集够了吗 揭秘支付宝福字扫描技巧<br>今年支付宝再次推出了“五福红包”活动，表示要“把欠大家的敬业福都还给大家”。和去年一样，集齐五福还有机会获得巨额红包，“五福”分别是： 富强福、和谐福、友善福、爱国福和敬业福。</p>
-<h1 id="支付宝福字扫描技巧"><a href="#支付宝福字扫描技巧" class="headerlink" title="支付宝福字扫描技巧"></a>支付宝福字扫描技巧</h1><p>大家打开手机支付宝，在首页就能看到活动入口，使用AR扫一扫任意“福”字，就有机会领取一张福卡。<br>比如扫下面这个“福”字<br><img src="http://cms-bucket.nosdn.127.net/cfd9b7cb12904ebd9352dcada5c7dd1c20170118151220.png" alt="支付宝五福你集够了吗 揭秘支付宝福字扫描技巧"><br>支付宝五福你集够了吗 揭秘支付宝福字扫描技巧</p>
-<p>支付宝春节集福字活动看这一篇就够了<br>支付宝这次又加了两张“特殊道具”：“万能福”和“顺手牵羊卡”。其中，万能福可以当做任何一张“福”来用;而顺手牵羊卡则可以随机抽取支付宝好友的福卡。</p>
-<p>另外，从1月20日(腊月二十三)开始到除夕夜22点之前，用户开通蚂蚁森林或者给好友浇水，可以随机获得福卡。<br>可以说，今年集齐难度大大降低，已经有近50万人已经集齐了五福。</p>
-<p><img src="http://cms-bucket.nosdn.127.net/f0472a988aa2408bbd67180dc1ce887420170118151239.png" alt="支付宝五福你集够了吗 揭秘支付宝福字扫描技巧"><br>支付宝五福你集够了吗 揭秘支付宝福字扫描技巧</p>
-<h1 id="支付宝集五福活动时间"><a href="#支付宝集五福活动时间" class="headerlink" title="支付宝集五福活动时间"></a>支付宝集五福活动时间</h1><p>支付宝集五福活动时间为2017年1月18日–1月27日。</p>
-<p>活动分为两波，目前第一波福气已经开启，扫“福”字可随机获得福卡(小编亲测，目前通过扫描福字，每个人每天只能扫到3-4张福字)。</p>
-<p>第二波将在1月20日开启，用户开通蚂蚁森林或者给好友浇水，也可以随机获得福卡。<br>为了让集五福活动更加互动有趣，支付宝这次又加了两张“特殊道具”：“万能福”和“顺手牵羊卡”。其中，万能福可以当做任何一张“福”来用;而顺手牵羊卡则可以随机抽取支付宝好友的福卡。(不过目前，还不知道如何获取到这两个“特殊道具”)</p>
-<p>除夕夜22:00截止收集五福，22:18分红包。至于红包金额，支付宝说今年要的是随机，运气最好的666元，运气最差的1-2元。</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[test]]></title>
-      <url>https://norwaya.github.io/test/</url>
-      <content type="html"><![CDATA[<p>在连接数据库之前必须保证SQL Server 2012是采用SQL Server身份验证方式而不是windows身份验证方式。如果在安装时选用了后者，则重新设置如下:<br>        设置SQL Server 2012的身份验证方式：<br>            1.在连接的服务器上右击，选择属性<br>            2.点击左侧上的安全性，在栏目中选择SQL Server和Windows身份验证<br>            3.设置sa的密码和sa登录名<br>                在根目录下，点击安全性-&gt;登录名-&gt;选择sa登录名右击选择属性<br>                点击左侧上的常规，在右侧设置登录名sa和密码<br>            4.设置完账号密码后，在sa登录名的属性里在左侧上点击状态，在右侧的登录下选择启用<br>            5.重启sql server服务器<br>采用了SQL server身份验证的方式后，在所有程序中打开SQL Server配置管理器，在配置管理器窗口的左侧找到SQL Server网络配置，然后展开点击“ ‘数据库名’ 的协议”，将右侧中的协议全部开启。接下来双击TCP/IP协议，选择IP地址在下面的一个栏目中选择一个IP填入IP地址，TCP端口号，活动选择是，已启用选择是。最后SQL Server服务</p>
-<p>先开启Telnet服务：打开“控制面板”→“程序”，“在程序和功能”找到并点击“打开或关闭Windows 功能”进入Windows 功能设置对话框。找到并勾选“Telnet客户端，最后“确定”稍等片刻即可完成安装。除此之外，我们也可通过该向导安装 “TFTP客户端”、“Internet 信息服务”等。</p>
-<p> 安装完成后，Telnet服务默认情况下是禁用的。还需执行“开始”→“运行”，输入services.msc打开服务管理器。找到并双击Telnet服务项，设置其启动方式为“手动”(更安全，只在需要的时候才启用)，最后“启动”该服务“确定”退出即可。<br>打开命令提示符窗口-&gt;输入： telnet 127.0.0.1 1433<br>连接成功会进入一片全黑的界面，连接失败会提示连接失败</p>
-<p>接下来配置环境变量 CLASSPATH：<br>下载Microsoft JDBC Driver 4.0 for SQL Server，解压文件，得到sqljdbc.jar和sqljdbc4.jar。如果使用的是jre1.7版本，则忽略sqljdbc.jar（因为使用不了，而且如果和sqljdbc4.jar一起用会出错）。<br>以下设置均针对jre1.7版本（1.7以下应该也适用）：<br>在D盘新建一个文件夹，命名为sqljdbc4，将sqljdbc4.jar复制一个进去。<br>右击 我的电脑 → 属性 → 高级系统设置（高级） → 环境变量，在系统变量中双击CLASSPATH变量（或选中CLASSPATH后 → 编辑），在最后面追加 “;D:\sqljdbc4 \sqljdbc4.jar” （注意最前面有个 ; ）若不存在CLASSPATH，就新建CLASSPATH变量，并且将其值设为“D:\sqljdbc4 \sqljdbc4.jar”。</p>
-<p>配置完环境变量后，将sqljdbc4.jar类库文件拷贝到D:\Program Files\Java\jdk1.7.0\jre\lib\ext目录下。（拷贝到安装的jdk的jdk\jre\lib\ext的目录下），同时将sqljdbc4.jar类库文件拷贝到D:\Program Files\Java\jre7\lib\ext目录下（拷贝到安装的jdk的jdk\jre\lib\ext的目录下）</p>
-<p>如果是使用Tomcat做服务器，那么需要将sqljdbc4.jar类库文件拷贝到C:\apache-tomcat-7.0.11\lib目录下（tomcat的安装目录）。 同时将sqljdbc4.jar类库文件拷贝到D:\apache-tomcat-7.0.11\webapps\test\WEB-INF\lib目录下（test目录是个人应用）</p>
-<p>给eclipse中的项目添加sqljdbc4.jar包</p>
-<p>经过以上配置即可使用Java通过jdbc连接sql server</p>
-]]></content>
+<h1 id="支付宝福字扫描技巧"><a href="#支付宝福字扫描技巧" class="headerlink" title="支付宝福字扫描技巧"></a>支付宝福字扫描技巧</h1><pre><code>大家打开手机支付宝，在首页就能看到活动入口，使用AR扫一扫任意“福”字，就有机会领取一张福卡。
+比如扫下面这个“福”字
+</code></pre><p><img src="http://cms-bucket.nosdn.127.net/cfd9b7cb12904ebd9352dcada5c7dd1c20170118151220.png" alt="支付宝五福你集够了吗 揭秘支付宝福字扫描技巧"><br>    支付宝五福你集够了吗 揭秘支付宝福字扫描技巧</p>
+<pre><code>支付宝春节集福字活动看这一篇就够了
+支付宝这次又加了两张“特殊道具”：“万能福”和“顺手牵羊卡”。其中，万能福可以当做任何一张“福”来用;而顺手牵羊卡则可以随机抽取支付宝好友的福卡。
+另外，从1月20日(腊月二十三)开始到除夕夜22点之前，用户开通蚂蚁森林或者给好友浇水，可以随机获得福卡。
+可以说，今年集齐难度大大降低，已经有近50万人已经集齐了五福。
+</code></pre><p><img src="http://cms-bucket.nosdn.127.net/f0472a988aa2408bbd67180dc1ce887420170118151239.png" alt="支付宝五福你集够了吗 揭秘支付宝福字扫描技巧"><br>    支付宝五福你集够了吗 揭秘支付宝福字扫描技巧</p>
+<h1 id="支付宝集五福活动时间"><a href="#支付宝集五福活动时间" class="headerlink" title="支付宝集五福活动时间"></a>支付宝集五福活动时间</h1><pre><code>支付宝集五福活动时间为2017年1月18日--1月27日。
+活动分为两波，目前第一波福气已经开启，扫“福”字可随机获得福卡(小编亲测，目前通过扫描福字，每个人每天只能扫到3-4张福字)。
+
+第二波将在1月20日开启，用户开通蚂蚁森林或者给好友浇水，也可以随机获得福卡。
+为了让集五福活动更加互动有趣，支付宝这次又加了两张“特殊道具”：“万能福”和“顺手牵羊卡”。其中，万能福可以当做任何一张“福”来用;而顺手牵羊卡则可以随机抽取支付宝好友的福卡。(不过目前，还不知道如何获取到这两个“特殊道具”)
+
+除夕夜22:00截止收集五福，22:18分红包。至于红包金额，支付宝说今年要的是随机，运气最好的666元，运气最差的1-2元。
+</code></pre>]]></content>
     </entry>
     
     <entry>
