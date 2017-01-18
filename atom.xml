@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://norwaya.github.io/"/>
-  <updated>2017-01-17T01:57:14.583Z</updated>
+  <updated>2017-01-18T09:01:45.027Z</updated>
   <id>https://norwaya.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用依赖包</title>
+    <link href="https://norwaya.github.io/%E4%BE%9D%E8%B5%96%E5%8C%85/"/>
+    <id>https://norwaya.github.io/依赖包/</id>
+    <published>2017-01-18T09:01:24.000Z</published>
+    <updated>2017-01-18T09:01:45.027Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常用的依赖包"><a href="#常用的依赖包" class="headerlink" title="常用的依赖包"></a>常用的依赖包</h1><h2 id="android-floating-searchview"><a href="#android-floating-searchview" class="headerlink" title="android floating searchview"></a>android floating searchview</h2><pre><code>[android-floating-searchView](https://github.com/arimorty/floatingsearchview.git)
+fragment中实现的searchview 绑定了左侧的drawer。浮动特性的
+</code></pre><h2 id="。。。。。。"><a href="#。。。。。。" class="headerlink" title="。。。。。。"></a>。。。。。。</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;常用的依赖包&quot;&gt;&lt;a href=&quot;#常用的依赖包&quot; class=&quot;headerlink&quot; title=&quot;常用的依赖包&quot;&gt;&lt;/a&gt;常用的依赖包&lt;/h1&gt;&lt;h2 id=&quot;android-floating-searchview&quot;&gt;&lt;a href=&quot;#android-fl
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>test</title>

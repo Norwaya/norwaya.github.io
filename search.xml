@@ -4,6 +4,14 @@
   
     
     <entry>
+      <title><![CDATA[常用依赖包]]></title>
+      <url>https://norwaya.github.io/%E4%BE%9D%E8%B5%96%E5%8C%85/</url>
+      <content type="html"><![CDATA[<h1 id="常用的依赖包"><a href="#常用的依赖包" class="headerlink" title="常用的依赖包"></a>常用的依赖包</h1><h2 id="android-floating-searchview"><a href="#android-floating-searchview" class="headerlink" title="android floating searchview"></a>android floating searchview</h2><pre><code>[android-floating-searchView](https://github.com/arimorty/floatingsearchview.git)
+fragment中实现的searchview 绑定了左侧的drawer。浮动特性的
+</code></pre><h2 id="。。。。。。"><a href="#。。。。。。" class="headerlink" title="。。。。。。"></a>。。。。。。</h2>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[test]]></title>
       <url>https://norwaya.github.io/test/</url>
       <content type="html"><![CDATA[<p>在连接数据库之前必须保证SQL Server 2012是采用SQL Server身份验证方式而不是windows身份验证方式。如果在安装时选用了后者，则重新设置如下:<br>        设置SQL Server 2012的身份验证方式：<br>            1.在连接的服务器上右击，选择属性<br>            2.点击左侧上的安全性，在栏目中选择SQL Server和Windows身份验证<br>            3.设置sa的密码和sa登录名<br>                在根目录下，点击安全性-&gt;登录名-&gt;选择sa登录名右击选择属性<br>                点击左侧上的常规，在右侧设置登录名sa和密码<br>            4.设置完账号密码后，在sa登录名的属性里在左侧上点击状态，在右侧的登录下选择启用<br>            5.重启sql server服务器<br>采用了SQL server身份验证的方式后，在所有程序中打开SQL Server配置管理器，在配置管理器窗口的左侧找到SQL Server网络配置，然后展开点击“ ‘数据库名’ 的协议”，将右侧中的协议全部开启。接下来双击TCP/IP协议，选择IP地址在下面的一个栏目中选择一个IP填入IP地址，TCP端口号，活动选择是，已启用选择是。最后SQL Server服务</p>
